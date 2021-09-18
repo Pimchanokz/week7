@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main()
+{
+    float g[10];
+    int i; 
+    float grade;
+    char *subject[10];
+    subject[1] = "Thai[1]";
+    subject[2] = "English[3]";
+    subject[3] = "Math[3]";
+    subject[4] = "Physics[2]";
+    subject[5] = "Chemistry[1.5]";
+    subject[6] = "Biology[1.5]";
+    subject[7] = "History[1]";
+    subject[8] = "Art[0.5]";
+    subject[9] = "PE[0.5]";
+    subject[10] = "Social[1]";
+    
+    printf("Enter your grade\n");
+    for(i=1; i<=10; i++)
+    {
+        printf("%s : ",subject[i]);
+        scanf("%f\n", &g[i]);
+    }
+    
+	grade = (g[1]*1+g[2]*3+g[3]*3+g[4]*2+g[5]*1.5+g[6]*1.5+g[7]*1+g[8]*0.5+g[9]*0.5+g[10]*1)/15;
+	printf("My GPA = %.2f",grade);
+	
+	return 0;
+}
