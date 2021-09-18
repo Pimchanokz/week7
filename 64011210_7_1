@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main ()
+{	
+	float g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,grade;
+	printf("Enter your grade\n");
+	printf("Thai[1] : ");
+	scanf("%f \n",&g1);
+	printf("English[3] : ");
+	scanf("%f \n",&g2);
+	printf("Math[3] : ");
+	scanf("%f \n",&g3);
+	printf("Physics[2] : ");
+	scanf("%f \n",&g4);
+	printf("Chemistry[1.5] : ");
+	scanf("%f \n",&g5);
+	printf("Biology[1.5] : ");
+	scanf("%f \n",&g6);
+	printf("History[1] : ");
+	scanf("%f \n",&g7);
+	printf("Art[0.5] : ");
+	scanf("%f \n",&g8);
+	printf("PE[0.5] : ");
+	scanf("%f \n",&g9);
+	printf("Social[1] : ");
+	scanf("%f \n",&g10);
+	
+	grade = (g1*1+g2*3+g3*3+g4*2+g5*1.5+g6*1.5+g7*1+g8*0.5+g9*0.5+g10*1)/15;
+	printf("My GPA = %.2f",grade);
+	
+	return 0;
+}
